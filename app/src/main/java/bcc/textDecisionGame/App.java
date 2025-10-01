@@ -10,13 +10,12 @@ public class App {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Swing Layout Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(650, 300);
+        frame.setSize(800, 300);
         // Use BorderLayout
         frame.setLayout(new BorderLayout());
         JTextArea text = new JTextArea("A wildfire has started, which team will you deploy as?");
         text.setLineWrap(true);
 
-        //text.setPreferredSize(new Dimension(400, 300));
         frame.add(text, BorderLayout.CENTER);
 
         // Create panel for buttons at bottom
@@ -51,8 +50,8 @@ public class App {
                 }
                 else if (text.getText().equals("Which dozer should you use?")){
                     text.setText("You've reached the fire, where should you make a line?");
-                    leftButton.setText("Make a line as close to the fire as possible to prevent it from spreading further");
-                    rightButton.setText("Make a line a small distance away from the fire");
+                    leftButton.setText("Make a line near the fire to stop the spread");
+                    rightButton.setText("Make a line a little far from the fire");
                 }
                 else if (text.getText().equals("You've reached the fire, where should you make a line?")){
                     text.setText("The fire was spreading too quickly, your dozer was surrounded by fire and burned down.  Pretty bad ending.");
