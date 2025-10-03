@@ -15,6 +15,7 @@ public class App {
         frame.setLayout(new BorderLayout());
         JTextArea text = new JTextArea("A wildfire has started, which team will you deploy as?");
         text.setLineWrap(true);
+        text.setEditable(false);
 
         frame.add(text, BorderLayout.CENTER);
 
